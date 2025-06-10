@@ -1,0 +1,6 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/json-20250517.jar",
+    "lib/flatlaf-3.6.jar"
+  ]
+}
