@@ -82,12 +82,8 @@ A modern Java Swing GUI application that fetches and displays movies from the [T
 ---
 
 ## 🖼️ UI Preview
+![project_demo](https://github.com/user-attachments/assets/13f78d09-a49f-43c6-84ff-11cda728f720)
 
-> Add screenshots or a demo gif here showing the search, filter, and detail pane.
-![Uploading project_demo.gif…]()
-
-
----
 
 
 ## 🙌 Acknowledgements
