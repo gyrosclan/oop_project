@@ -13,10 +13,10 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class TMDBApi {
-    private static final String API_KEY = "4fb25856788ed88c4703d72dd44549ca"; // Replace with your TMDB API key
+    private static final String API_KEY = "4fb25856788ed88c4703d72dd44549ca";
     private static final String BASE_URL = "https://api.themoviedb.org/3";
 
-    // Search movies by query (same as before)
+    // Search movies 
     public List<Movie> searchMovies(String query) {
         String endpoint = "/search/movie";
         try {
@@ -29,22 +29,20 @@ public class TMDBApi {
         }
     }
 
-    // Get top rated movies
+    // top rated movies
     public List<Movie> getTopRatedMovies() {
         String urlString = BASE_URL + "/movie/top_rated?api_key=" + API_KEY;
         return fetchMoviesFromUrl(urlString);
     }
 
-    // Get now playing movies (used as "latest" proxy)
+    // latest movies
     public List<Movie> getNowPlayingMovies() {
         String urlString = BASE_URL + "/movie/now_playing?api_key=" + API_KEY;
         return fetchMoviesFromUrl(urlString);
     }
 
-    /**
-     * Discover movies with filters: genreId (use 0 to ignore), language (empty or null to ignore),
-     * year (0 to ignore)
-     */
+    //Discover movies with filters: genreId, language and yer
+     
     public List<Movie> discoverMovies(int genreId, String language, int year) {
         try {
             StringBuilder urlBuilder = new StringBuilder(BASE_URL + "/discover/movie?api_key=" + API_KEY);

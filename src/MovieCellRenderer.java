@@ -33,7 +33,7 @@ public class MovieCellRenderer extends JPanel implements ListCellRenderer<Movie>
 
         titleLabel = new JLabel();
         titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD, 15f));
-        titleLabel.setForeground(UIManager.getColor("Label.foreground"));
+        //titleLabel.setForeground(UIManager.getColor("Label.foreground"));
         textPanel.add(titleLabel);
 
         yearAndRatingLabel = new JLabel();
@@ -83,7 +83,7 @@ public class MovieCellRenderer extends JPanel implements ListCellRenderer<Movie>
                 ? overviewSnippet
                 : "No overview available.");
 
-        // --- Use ImageLoader ---
+        // Using ImageLoader
         String posterPath = movie.getPosterUrl();
         String imageUrl = (posterPath != null && !posterPath.isEmpty())
                 ? "https://image.tmdb.org/t/p/w200" + posterPath

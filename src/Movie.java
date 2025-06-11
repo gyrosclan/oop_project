@@ -1,6 +1,6 @@
 package src;
 public class Movie {
-    // Fields (encapsulation: private)
+    // Fields made private for encapsulation
     private int id;
     private String title;
     private String overview;
